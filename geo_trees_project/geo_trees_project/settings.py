@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'muenstertrees', #YOUR_DATABASE_NAME
         'USER': 'postgres', #YOUR_USER_NAME
-        'PASSWORD': '123456',#YOUR_DB_PASSWORD
+        'PASSWORD': 'postgres',#YOUR_DB_PASSWORD
         'HOST': 'localhost', #HOST
         'PORT': '5432'   #PORT
     }
