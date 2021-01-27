@@ -4,6 +4,7 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register(r'muenstertreesdata', views.TreesDataViewSet)
+router.register(r'userdata', views.UserDataViewSet)
 
 
 urlpatterns = [

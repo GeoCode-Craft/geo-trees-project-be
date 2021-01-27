@@ -15,3 +15,14 @@ class TreesData(models.Model):
     class Meta:
         managed = False
         db_table = 'trees_data'
+		
+
+class Userdata(models.Model):
+	id = models.AutoField(primary_key=True)
+	name = models.CharField(max_length=50, blank=True, null=True)
+	email = models.EmailField(max_length=50, blank=True, null=True)
+	feedback = models.CharField(max_length=500, blank=True, null=True)
+	
+	class Meta:
+		managed = False
+		db_table = 'userdata'
