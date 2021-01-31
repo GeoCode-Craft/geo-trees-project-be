@@ -22,6 +22,8 @@ class Userdata(models.Model):
 	name = models.CharField(max_length=50, blank=True, null=True)
 	email = models.EmailField(max_length=50, blank=True, null=True)
 	feedback = models.CharField(max_length=500, blank=True, null=True)
+	entry_date = models.DateField()
+	tree_reference = models.IntegerField()
 	
 	class Meta:
 		managed = False
