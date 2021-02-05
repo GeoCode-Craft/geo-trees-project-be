@@ -7,7 +7,7 @@ class TreesDataSerializer(GeoFeatureModelSerializer):
     
 	class Meta:
 		model = TreesData
-		fields = '__all__'
+		fields = ['str_schl',  'baumgruppe','watering','fruit', 'eichenprozessionsspinner', 'date_water']
 		geo_field = 'geom'
 
 
