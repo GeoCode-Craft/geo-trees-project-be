@@ -3,13 +3,14 @@ from django.contrib.gis.db import models
 
 
 class TreesData(models.Model):
-    geom = models.GeometryField(blank=True, null=True)
+    id = models.AutoField(primary_key=True)
+    geom = models.PointField(blank=True, null=True, srid=4326)
     str_schl = models.CharField(max_length=5, blank=True, null=True)
     baumgruppe = models.CharField(max_length=50, blank=True, null=True)
     watering = models.BooleanField(default = False)
     fruit = models.BooleanField(default = False)
     eichenprozessionsspinner = models.BooleanField(default = False)
-    date_water = models.DateField()
+    date_water = models.DateField(null=True)
 	
 
     class Meta:
